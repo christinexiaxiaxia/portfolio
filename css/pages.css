@@ -403,4 +403,11 @@ a {
         line-height: 35px;
         letter-spacing: -0.03em;
     }
+
+    .grot-header {
+        font-family: SportingGrotesque-Regular, 'Shrikhand', sans-serif;
+        font-size: 28pt;
+        letter-spacing: -0.05em;
+        text-align:center;
+    }
 }
