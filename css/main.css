@@ -1,0 +1,355 @@
+iframe {display:none !important;};
+
+@charset "UTF-8";
+
+/*FONT: Sporting Grotesque by Lucas le Bihan*/
+/*FOUNDRY: Velvetyne.fr*/
+@font-face{
+	font-family: SportingGrotesque-Regular;
+	
+    src: url("https://github.com/velvetyne/Sporting-Grotesque/blob/master/webfonts/Regular/Sporting_Grotesque-Regular_web.eot"); /* IE9 Compat Modes */
+    src: url("https://github.com/velvetyne/Sporting-Grotesque/blob/master/webfonts/Regular/Sporting_Grotesque-Regular_web.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+         url("https://github.com/velvetyne/Sporting-Grotesque/blob/master/webfonts/Regular/Sporting_Grotesque-Regular_web.woff2") format("woff2"), /* Super Modern Browsers */
+         url("https://github.com/velvetyne/Sporting-Grotesque/blob/master/webfonts/Regular/Sporting_Grotesque-Regular_web.woff") format("woff"), /* Pretty Modern Browsers */
+         url("https://github.com/velvetyne/Sporting-Grotesque/blob/master/webfonts/Regular/Sporting_Grotesque-Regular_web.ttf")  format("truetype"), /* Safari, Android, iOS */
+         url("https://github.com/velvetyne/Sporting-Grotesque/blob/master/webfonts/Regular/Sporting_Grotesque-Regular_web.svg#svgSportingGrotesque") format("svg"); /* Legacy iOS */
+}
+
+@keyframes fadein {
+    0% {opacity: 0}
+    100% {opacity: {text:topbar opacity}}
+}
+
+@keyframes flicker {
+  0% {opacity: 0.6}
+  50% {opacity: 1}
+  /*25% {opacity: 1}*/
+  /*75% {opacity: 1}*/
+  100% {opacity: 0.6}
+}
+
+@keyframes null {
+  0% {opacity: 1}
+  100% {opacity: 1}
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: {color:scrollbar bg};
+}
+body::-webkit-scrollbar-thumb {
+    background-color: {color:scrollbar};
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: rgba(0,0,0,1);
+  background: rgba(255,255,0,1);
+}
+::selection {
+  color: rgba(0,0,0,1);
+  background: rgba(255,255,0,1);
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    /*background-color: white;*/
+    cursor: crosshair;
+}
+
+p {
+    cursor: crosshair;
+}
+
+/*HEADER*/
+
+#header {
+	position: fixed;
+	max-width: 40%;
+	top: 23px;
+	left: 15px;
+	
+    font-family: serif;
+    font-size: 43pt;
+	letter-spacing: -0.02em;
+	line-height: 48px;
+	text-align: left;
+	color: black;
+	text-decoration: none;
+	text-transform: lowercase;
+	
+	z-index: 101;
+	/*transition-duration: 0.3s;*/
+}
+
+#header a:hover {
+    animation-name: flicker;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+    
+    font-family: SportingGrotesque-Regular, 'Shrikhand', sans-serif;
+    font-size: 36pt;
+	letter-spacing: -0.05em;
+	top: 30px;
+	/*transition-duration: 0.3s;*/
+}
+
+.navi {
+    position: fixed;
+    max-width: 60%;
+	top: 23px;
+	right: 15px;
+	
+    font-family: serif;
+    font-size: 43pt;
+	letter-spacing: -0.02em;
+	line-height: 48px;
+	text-decoration: none;
+	text-align: right;
+	color: black;
+
+	cursor: default;
+	z-index: 101;
+}
+
+.navlink {
+	color: black;
+	text-decoration: none;
+}
+
+.navlink:hover {
+	color: black;
+    font-family: SportingGrotesque-Regular, 'Shrikhand', sans-serif;
+    font-size: 36pt;
+    line-height: 34px;
+	letter-spacing: -0.05em;
+	
+    animation-name: flicker;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+}
+
+#nav2 {
+    font-family: SportingGrotesque-Regular, 'Shrikhand', sans-serif;
+    font-size: 36pt;
+    line-height: 34px;
+	letter-spacing: -0.05em;
+}
+
+/*#nav2 {
+    font-family: serif;
+    font-size: 43pt;
+	line-height: 34px;
+	letter-spacing: -0.02em;
+}*/
+
+.contactlink {
+	color: black;
+    position: fixed;
+    top: 23px;
+    right: 30px;
+}
+
+.contact-link {
+    font-family: SportingGrotesque-Regular, 'Shrikhand', sans-serif;
+	color: black;
+	text-decoration: none;
+	transition-duration: 0.3s;
+}
+
+.contact-link:hover {
+	color: black;
+	text-decoration: underline;
+	transition-duration: 0.3s;
+}
+
+
+/*CONTENT*/
+
+.works {
+    position: relative;
+    width: 40%;
+    top: 135px;
+	margin-left: 30%;
+	margin-right: 30%;
+	/*padding-top: 34px;*/
+    margin-bottom: 68px;
+    z-index: 100;
+}
+
+.image {
+    width: 100%;
+	transition-duration: 0.3s;
+	z-index: 99;
+}
+
+.image:hover {
+    animation-name: flicker;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+	
+	transition-duration: 0.3s;
+}
+
+.desc {
+    position: absolute;
+    width: calc(100vw - 30px);
+    /*height: 100%;*/
+    top: calc(40% - 24px);
+    left: calc(-30vw + 15px);
+    z-index: 1;
+    
+    font-family: serif;
+    font-size: 18pt;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    
+    color: black;
+    visibility: hidden;
+    /*background-color: yellow;*/
+}
+ 
+#title {
+    position: absolute;
+    width: calc(30% - 15px);
+    left: 0px;
+    
+    /*text-align: left;*/
+    
+    /*background-color: pink;*/
+}
+
+#date {
+    position: absolute;
+    width: calc(30% - 15px);
+    right: 0px;
+    
+    /*text-align: left;*/
+    
+    /*background-color: pink;*/
+}
+
+.works:hover .desc {
+    visibility: visible;
+}
+
+#bgShape {
+    position: fixed;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    /*padding-left: 40%;*/
+    /*padding-right: 40%;*/
+    text-align: center;
+  
+    z-index: 1;
+    background-color: pink;
+    visibility: hidden;
+}
+
+#shape {
+    fill: none;
+    stroke: yellow;
+    stroke-width: 18; 
+    /*stroke-linejoin: round;*/
+    /*stroke-linecap: round;*/
+}
+
+#wip {
+    position: fixed;
+    width: 80%;
+    height: 48%;
+    margin-top: 20vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    font-family: SportingGrotesque-Bold;
+    font-size: 60pt;
+    line-height: 60pt;
+    text-align: center;
+    
+    animation-name: flicker;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+    
+    background-color: pink;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#backButton {
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    
+    font-family: serif;
+    font-size: 18pt;
+	letter-spacing: -0.02em;
+    color: black;
+    
+    cursor: pointer;
+    z-index: 10000;
+}
+
+#backButtonSymbol {
+    position: absolute;
+    left: 9pt;
+    bottom: -20pt;
+    
+    font-size: 36pt;
+    visibility: hidden;
+}
+
+#backButton:hover {
+    animation-name: flicker;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+    
+    bottom: 9px;
+    font-family: SportingGrotesque-Regular, 'Shrikhand', sans-serif;
+    font-size: 15pt;
+}
+
+#backButton:hover #backButtonText {
+    visibility: hidden;
+}
+
+#backButton:hover #backButtonSymbol {
+    visibility: visible;
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        font-size: 33pt;
+        line-height: 35px;
+    }
+    #header a:hover {
+        font-size: 28pt;
+        top: 29px;
+    }
+    .navi {
+        font-size: 33pt;
+        line-height: 35px;
+    }
+    .navlink:hover {
+        font-size: 28pt;
+        line-height: 25px;
+    }
+    #nav2 {
+        font-size: 28pt;
+        line-height: 25px;
+    }
+    
+    .works {
+        width: 80%;
+        top: 160px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .works:hover .desc {
+        visibility: hidden;
+    }
+    
+}
