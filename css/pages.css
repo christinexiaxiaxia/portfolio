@@ -172,6 +172,11 @@ body, html {
     z-index: 100;
 }
 
+a {
+    color: black;
+    cursor: alias;
+}
+
 
 /*CONTENT*/
 
