@@ -85,6 +85,17 @@ body, html {
 	/*transition-duration: 0.3s;*/
 }
 
+.grot-header {
+    font-family: SportingGrotesque-Regular, 'Shrikhand', sans-serif;
+    font-size: 36pt;
+    letter-spacing: -0.05em;
+    text-align:center;
+}
+
+.grot-header.about {
+    line-height: 14px;
+}
+
 .navi {
     position: fixed;
     max-width: 60%;
@@ -355,6 +366,13 @@ a {
     .navlink:hover {
         font-size: 28pt;
         line-height: 25px;
+    }
+
+    .navlink.contact, .navlink.about {
+        font-family: SportingGrotesque-Regular, 'Shrikhand', sans-serif;
+        font-size: 28pt;
+        line-height: 25px;
+        letter-spacing: -0.05em;
     }
     
     .works {
