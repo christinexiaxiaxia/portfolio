@@ -57,42 +57,8 @@
         <a onclick="goBack()"><span id="backButtonText">go back</span><span id="backButtonSymbol">&#9756;</span></a>
     </div>
 
-<svg id="bgShape">
-    <path id="shape" d="
-        M 159 9 
-        c -85   0 -150   65 -150  150 
-        c   0  85   65  150  150  150 
-        c  85   0  150  -65  150 -150 
-        c   0 -85  -65 -150 -150 -150 
-        Z
-        M 75 75
-        l 50 50
-    " />
-</svg>
+<script type="text/javascript" src="../../js/main.js"></script>
 
-<script>
-
-    var shape = document.getElementById("shape");
-    var length = triangle.getTotalLength();
-
-    shape.style.strokeDasharray = length;
-    shape.style.strokeDashoffset = length;
-
-    window.addEventListener("scroll", drawShape);
-
-    function drawShape() {
-        var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-
-        var draw = length * scrollpercent;
-
-        shape.style.strokeDashoffset = length - draw;
-    }
-
-    function goBack() {
-        window.history.back();
-    }
-
-</script>
     
 </body>
 </html>
