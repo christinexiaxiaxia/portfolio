@@ -4,6 +4,17 @@
 $('.to-vernacular').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ee').css({'display':'inline'});
+	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
+	$('span.b.ee').css({'font-style':'italic'});
+})
+
+$('.to-da-ge').click(function(){
+	$('.content').css({'display':'none'});
+	$('.content.cc').css({'display':'inline'});
+	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
+	$('span.b.cc').css({'font-style':'italic'});
 })
 
 
@@ -13,6 +24,7 @@ $('li.about').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.about').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -20,6 +32,7 @@ $('li.contact').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.contact').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -27,6 +40,15 @@ $('li.main').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.main').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
+	$(this).css({'font-style':'italic'});
+})
+
+$('li.extra').click(function(){
+	$('.content').css({'display':'none'});
+	$('.content.extra').css({'display':'inline'});
+	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -36,6 +58,7 @@ $('span.b.aa').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.aa').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -43,6 +66,7 @@ $('span.b.bb').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.bb').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -50,6 +74,7 @@ $('span.b.cc').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.cc').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -57,6 +82,7 @@ $('span.b.dd').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.dd').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -64,6 +90,7 @@ $('span.b.ee').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ee').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -71,6 +98,7 @@ $('span.b.ff').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ff').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -78,6 +106,7 @@ $('span.b.gg').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.gg').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -85,6 +114,7 @@ $('span.b.hh').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.hh').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -92,6 +122,7 @@ $('span.b.ii').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ii').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -99,6 +130,7 @@ $('span.b.jj').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.jj').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -106,6 +138,7 @@ $('span.b.kk').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.kk').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -113,6 +146,7 @@ $('span.b.ll').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ll').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -120,6 +154,7 @@ $('span.b.mm').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.mm').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -127,6 +162,7 @@ $('span.b.nn').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.nn').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -134,6 +170,7 @@ $('span.b.oo').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.oo').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -141,6 +178,7 @@ $('span.b.pp').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.pp').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 })
 
@@ -150,6 +188,7 @@ $('img.main.aa').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.aa').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$('span.b.aa').css({'font-style':'italic'});
 })
 
@@ -157,6 +196,7 @@ $('img.main.bb').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.bb').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$('span.b.bb').css({'font-style':'italic'});
 })
 
@@ -164,6 +204,7 @@ $('img.main.cc').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.cc').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$('span.b.cc').css({'font-style':'italic'});
 })
 
@@ -171,6 +212,7 @@ $('img.main.dd').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.dd').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$('span.b.dd').css({'font-style':'italic'});
 })
 
@@ -178,6 +220,7 @@ $('img.main.ee').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ee').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$('span.b.ee').css({'font-style':'italic'});
 })
 
@@ -185,6 +228,7 @@ $('img.main.ff').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ff').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$('span.b.ff').css({'font-style':'italic'});
 })
 
@@ -192,6 +236,7 @@ $('img.main.gg').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.gg').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$('span.b.gg').css({'font-style':'italic'});
 })
 
@@ -199,6 +244,7 @@ $('img.main.hh').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.hh').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$('span.b.hh').css({'font-style':'italic'});
 })
 
@@ -206,6 +252,7 @@ $('img.main.ii').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ii').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$('span.b.ii').css({'font-style':'italic'});
 })
 
@@ -213,6 +260,7 @@ $('img.main.jj').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.jj').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$('span.b.jj').css({'font-style':'italic'});
 })
 
@@ -220,6 +268,7 @@ $('img.main.kk').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.kk').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$('span.b.kk').css({'font-style':'italic'});
 })
 
@@ -227,6 +276,7 @@ $('img.main.ll').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ll').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$('span.b.ll').css({'font-style':'italic'});
 })
 
@@ -234,6 +284,7 @@ $('img.main.mm').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.mm').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$('span.b.mm').css({'font-style':'italic'});
 })
 
@@ -241,6 +292,7 @@ $('img.main.nn').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.nn').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$('span.b.nn').css({'font-style':'italic'});
 })
 
@@ -248,6 +300,7 @@ $('img.main.oo').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.oo').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$('span.b.oo').css({'font-style':'italic'});
 })
 
@@ -255,6 +308,7 @@ $('img.main.pp').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.pp').css({'display':'inline'});
 	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
 	$('span.b.pp').css({'font-style':'italic'});
 })
 
@@ -375,6 +429,56 @@ $('span.b.kk').hover(
 	}
 )
 
+$('span.b.ll').hover(
+	function(){
+		$('img.ll').addClass('flicker-img');
+		$('span.date.ll').css({'display':'inline'});
+	}, function(){
+		$('img.ll').removeClass('flicker-img');
+		$('span.date.ll').css({'display':'none'});
+	}
+)
+
+$('span.b.mm').hover(
+	function(){
+		$('img.mm').addClass('flicker-img');
+		$('span.date.mm').css({'display':'inline'});
+	}, function(){
+		$('img.mm').removeClass('flicker-img');
+		$('span.date.mm').css({'display':'none'});
+	}
+)
+
+$('span.b.nn').hover(
+	function(){
+		$('img.nn').addClass('flicker-img');
+		$('span.date.nn').css({'display':'inline'});
+	}, function(){
+		$('img.nn').removeClass('flicker-img');
+		$('span.date.nn').css({'display':'none'});
+	}
+)
+
+$('span.b.oo').hover(
+	function(){
+		$('img.oo').addClass('flicker-img');
+		$('span.date.oo').css({'display':'inline'});
+	}, function(){
+		$('img.oo').removeClass('flicker-img');
+		$('span.date.oo').css({'display':'none'});
+	}
+)
+
+$('span.b.pp').hover(
+	function(){
+		$('img.pp').addClass('flicker-img');
+		$('span.date.pp').css({'display':'inline'});
+	}, function(){
+		$('img.pp').removeClass('flicker-img');
+		$('span.date.pp').css({'display':'none'});
+	}
+)
+
 
 
 
@@ -487,5 +591,55 @@ $('img.kk').hover(
 	}, function(){
 		$('span.b.kk').removeClass('flicker-txt');
 		$('span.date.kk').css({'display':'none'});
+	}
+)
+
+$('img.ll').hover(
+	function(){
+		$('span.b.ll').addClass('flicker-txt');
+		$('span.date.ll').css({'display':'inline'});
+	}, function(){
+		$('span.b.ll').removeClass('flicker-txt');
+		$('span.date.ll').css({'display':'none'});
+	}
+)
+
+$('img.mm').hover(
+	function(){
+		$('span.b.mm').addClass('flicker-txt');
+		$('span.date.mm').css({'display':'inline'});
+	}, function(){
+		$('span.b.mm').removeClass('flicker-txt');
+		$('span.date.mm').css({'display':'none'});
+	}
+)
+
+$('img.nn').hover(
+	function(){
+		$('span.b.nn').addClass('flicker-txt');
+		$('span.date.nn').css({'display':'inline'});
+	}, function(){
+		$('span.b.nn').removeClass('flicker-txt');
+		$('span.date.nn').css({'display':'none'});
+	}
+)
+
+$('img.oo').hover(
+	function(){
+		$('span.b.oo').addClass('flicker-txt');
+		$('span.date.oo').css({'display':'inline'});
+	}, function(){
+		$('span.b.oo').removeClass('flicker-txt');
+		$('span.date.oo').css({'display':'none'});
+	}
+)
+
+$('img.pp').hover(
+	function(){
+		$('span.b.pp').addClass('flicker-txt');
+		$('span.date.pp').css({'display':'inline'});
+	}, function(){
+		$('span.b.pp').removeClass('flicker-txt');
+		$('span.date.pp').css({'display':'none'});
 	}
 )
