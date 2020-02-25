@@ -168,7 +168,7 @@ li.main {
 	font-style: italic;
 }
 
-li:hover {
+li:hover, li.a:hover {
 	font-style: italic;
     
     animation: flicker-txt 600ms linear 0s infinite normal;
