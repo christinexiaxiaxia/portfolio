@@ -3,11 +3,9 @@ iframe {visibility:hidden; !important};
 /*FONT: Sporting Grotesque by Lucas le Bihan*/
 /*FOUNDRY: Velvetyne.fr*/
 @font-face{
-	font-family: SportingGrotesque-Regular;
-	src: url(https://static.tumblr.com/btbu8tz/xvSpvag6z/sporting_grotesque-regular_web.otf) format('opentypeface'),
-	     url(https://static.tumblr.com/btbu8tz/Xkvpvag6l/sporting_grotesque-regular_web.ttf) format('truetype'),
-         url(https://static.tumblr.com/btbu8tz/g2Bpvag6r/sporting_grotesque-regular_web.woff) format('woff'),
-	     url(https://static.tumblr.com/btbu8tz/UKVpvag6v/sporting_grotesque-regular_web.woff2) format('woff2');
+    font-family: SportingGrotesque-Regular;
+    
+    src: url("../fontsSportingGrotesque-Regular.otf");
 }
 
 @keyframes flicker {
