@@ -317,15 +317,15 @@ iframe {
 	}
 
 	.column.left {
-		height: calc(40vh - 2.25rem);
+		height: calc(35vh - 2.25rem);
 		top: 0;
 		margin-bottom: 0.75rem;
 		padding: 1.5rem 1.5rem 0rem 1.5rem;
 	}
 
 	.column.right {
-		height: calc(60vh - 2.25rem);
-		top: 40vh;
+		height: calc(65vh - 2.25rem);
+		top: 35vh;
 		margin-top: 0.75rem;
 		padding: 0rem 1.5rem 1.5rem 1.5rem;
 	}
