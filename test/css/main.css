@@ -317,6 +317,18 @@ iframe {
 		margin-top: 0.75rem;
 		padding: 0rem 1.5rem 1.5rem 1.5rem;
 	}
+
+	img.main {
+		margin-bottom: 1.5rem;
+	}
+
+	img.works {
+		margin: 0.75rem 0rem 0.75rem 0rem;
+	}
+
+	img.no-top-margin {
+		margin: 0rem 0rem 0.75rem 0rem;
+	}
 }
 
 
