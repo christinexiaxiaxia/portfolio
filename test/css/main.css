@@ -281,7 +281,7 @@ iframe {
 }
 
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 667px) {
 
 	.page-title, 
 	p.b.works-list, 
