@@ -1,355 +1,358 @@
-iframe {display:none !important;};
 
-@charset "UTF-8";
+/*Happy Times at the IKOB by Lucas Le Bihan (Velvetyne.fr)*/
 
-/*FONT: Sporting Grotesque by Lucas le Bihan*/
-/*FOUNDRY: Velvetyne.fr*/
-@font-face{
-	font-family: SportingGrotesque-Regular;
-	
-    src: url("../fontsSportingGrotesque-Regular.otf");
+@font-face {
+	font-family: "Happy Times";
+	font-style: normal;
+	src: url("../fonts/happy-times-at-the-ikob-webfont.woff") format("woff"),
+		 url("../fonts/happy-times-at-the-ikob-webfont.woff2") format("woff2");
 }
 
-@keyframes fadein {
-    0% {opacity: 0}
-    100% {opacity: {text:topbar opacity}}
+@font-face {
+	font-family: "Happy Times";
+	font-style: italic;
+	src: url("../fonts/happy-times-at-the-ikob_italic-webfont.woff") format("woff"),
+		 url("../fonts/happy-times-at-the-ikob_italic-webfont.woff2") format("woff2");
 }
 
-@keyframes flicker {
-  0% {opacity: 0.6}
-  50% {opacity: 1}
-  /*25% {opacity: 1}*/
-  /*75% {opacity: 1}*/
-  100% {opacity: 0.6}
+
+
+@keyframes flicker-txt {
+	0% {opacity: 0.4}
+	50% {opacity: 1}
+	100% {opacity: 0.4}
 }
 
-@keyframes null {
-  0% {opacity: 1}
-  100% {opacity: 1}
+@keyframes flicker-img {
+	0% {opacity: 0.6}
+	50% {opacity: 1}
+	100% {opacity: 0.6}
 }
 
-body::-webkit-scrollbar {
-    width: 10px;
-    background-color: {color:scrollbar bg};
-}
-body::-webkit-scrollbar-thumb {
-    background-color: {color:scrollbar};
+
+/*STRUCTURE*/
+
+* {
+	font-family: serif;
+	font-size: 18px;
 }
 
-::-moz-selection { /* Code for Firefox */
-  color: rgba(0,0,0,1);
-  background: rgba(255,255,0,1);
+::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+::-moz-selection {
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.99);
 }
 ::selection {
-  color: rgba(0,0,0,1);
-  background: rgba(255,255,0,1);
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.99);
 }
 
-body, html {
-    height: 100%;
-    margin: 0;
-    /*background-color: white;*/
-    cursor: crosshair;
+.column {
+	position: fixed;
+	height: calc(100vh - 4rem);
+	top: 0;
+	padding: 2rem;
+
+	overflow: auto;
 }
+
+.column.left {
+	left: 0;
+	width: calc(50vw - 4rem);
+}
+
+.column.right {
+	right: 0;
+	width: calc(50vw - 4rem);
+}
+
+.content {
+	display: none;
+}
+
+.content.main {
+	display: inline;
+}
+
+
+
+
+
+/*TYPOGRAPHY*/
 
 p {
-    cursor: crosshair;
+	margin: 0rem 0rem 2rem 0rem;
 }
 
-/*HEADER*/
-
-#header {
-	position: fixed;
-	max-width: 40%;
-	top: 23px;
-	left: 15px;
-	
-    font-family: serif;
-    font-size: 43pt;
-	letter-spacing: -0.02em;
-	line-height: 48px;
-	text-align: left;
-	color: black;
-	text-decoration: none;
-	text-transform: lowercase;
-	
-	z-index: 101;
-	/*transition-duration: 0.3s;*/
+.header {
+	font-size: 2rem;
+	margin: 0rem 0rem 2rem 0rem;
 }
 
-#header a:hover {
-    animation-name: flicker;
-    animation-duration: 600ms;
-    animation-iteration-count: infinite;
-    
-    font-family: SportingGrotesque-Regular, 'Shrikhand', sans-serif;
-    font-size: 36pt;
-	letter-spacing: -0.05em;
-	top: 30px;
-	/*transition-duration: 0.3s;*/
+p.main {
+	display: none;
 }
+
+p.main.title, p.main.date {
+	font-size: 2rem;
+	margin: 0;
+}
+
+p.main.date {
+	margin-bottom: 2rem;
+}
+
+.page-title {
+	font-size: 2rem;
+	margin: 0;
+}
+
+.page-title:hover {
+	font-style: italic;
+}
+
+.works.date {
+	font-style: italic;
+}
+
+.works.caption {
+	margin-top: -0.5rem;
+}
+
+
+
 
 a {
-    color: black;
-    cursor: alias;
-}
+	margin: 0;
 
-.navi {
-    position: fixed;
-    max-width: 60%;
-	top: 23px;
-	right: 15px;
-	
-    font-family: serif;
-    font-size: 43pt;
-	letter-spacing: -0.02em;
-	line-height: 48px;
-	text-decoration: none;
-	text-align: right;
 	color: black;
-
-	cursor: default;
-	z-index: 101;
+	cursor: alias;
 }
 
-.navlink {
-	color: black;
-	text-decoration: none;
+a:hover {
+	font-style: italic;
+    
+    animation: flicker-txt 600ms linear 0s infinite normal;
 }
 
-.navlink:hover {
-	color: black;
-    font-family: SportingGrotesque-Regular, 'Shrikhand', sans-serif;
-    font-size: 36pt;
-    line-height: 34px;
-	letter-spacing: -0.05em;
-	
-    animation-name: flicker;
-    animation-duration: 600ms;
-    animation-iteration-count: infinite;
-}
-
-#nav2 {
-    font-family: SportingGrotesque-Regular, 'Shrikhand', sans-serif;
-    font-size: 36pt;
-    line-height: 34px;
-	letter-spacing: -0.05em;
-}
-
-/*#nav2 {
-    font-family: serif;
-    font-size: 43pt;
-	line-height: 34px;
-	letter-spacing: -0.02em;
-}*/
-
-.contactlink {
-	color: black;
-    position: fixed;
-    top: 23px;
-    right: 30px;
-}
-
-.contact-link {
-    font-family: SportingGrotesque-Regular, 'Shrikhand', sans-serif;
-	color: black;
-	text-decoration: none;
-	transition-duration: 0.3s;
-}
-
-.contact-link:hover {
-	color: black;
+a.to-vernacular {
 	text-decoration: underline;
-	transition-duration: 0.3s;
 }
 
 
-/*CONTENT*/
 
-.works {
-    position: relative;
-    width: 40%;
-    top: 135px;
-	margin-left: 30%;
-	margin-right: 30%;
-	/*padding-top: 34px;*/
-    margin-bottom: 68px;
-    z-index: 100;
+
+ul {
+	list-style-type: none;
 }
 
-.image {
-    width: 100%;
-	transition-duration: 0.3s;
-	z-index: 99;
+li {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+
+	cursor: alias;
 }
 
-.image:hover {
-    animation-name: flicker;
-    animation-duration: 600ms;
-    animation-iteration-count: infinite;
-	
-	transition-duration: 0.3s;
+li.a {
+	margin-top: 0rem;
 }
 
-.desc {
-    position: absolute;
-    width: calc(100vw - 30px);
-    /*height: 100%;*/
-    top: calc(40% - 24px);
-    left: calc(-30vw + 15px);
-    z-index: 1;
+li.main {
+	font-style: italic;
+}
+
+li:hover, li.a:hover {
+	font-style: italic;
     
-    font-family: serif;
-    font-size: 18pt;
-    line-height: 24px;
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
-    
-    color: black;
-    visibility: hidden;
-    /*background-color: yellow;*/
-}
- 
-#title {
-    position: absolute;
-    width: calc(30% - 15px);
-    left: 0px;
-    
-    /*text-align: left;*/
-    
-    /*background-color: pink;*/
+    animation: flicker-txt 600ms linear 0s infinite normal;
 }
 
-#date {
-    position: absolute;
-    width: calc(30% - 15px);
-    right: 0px;
-    
-    /*text-align: left;*/
-    
-    /*background-color: pink;*/
+
+
+span.b {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+
+	cursor: alias;
 }
 
-.works:hover .desc {
-    visibility: visible;
+span.b:hover {
+	font-style: italic;
+    
+    animation: flicker-txt 600ms linear 0s infinite normal;
 }
 
-#bgShape {
-    position: fixed;
-    top: 0px;
-    height: 100vh;
-    width: 100vw;
-    /*padding-left: 40%;*/
-    /*padding-right: 40%;*/
-    text-align: center;
-  
-    z-index: 1;
-    background-color: pink;
-    visibility: hidden;
+span.b:hover span.date {
+	display: inline;
 }
 
-#shape {
-    fill: none;
-    stroke: yellow;
-    stroke-width: 18; 
-    /*stroke-linejoin: round;*/
-    /*stroke-linecap: round;*/
+
+
+span.date {
+	display: none;
+
+	font-size: 2rem;
+	font-style: italic;
 }
 
-#wip {
-    position: fixed;
-    width: 80%;
-    height: 48%;
-    margin-top: 20vh;
-    margin-left: 10%;
-    margin-right: 10%;
-    
-    font-family: SportingGrotesque-Bold;
-    font-size: 60pt;
-    line-height: 60pt;
-    text-align: center;
-    
-    animation-name: flicker;
-    animation-duration: 600ms;
-    animation-iteration-count: infinite;
-    
-    background-color: pink;
-    visibility: hidden;
-    z-index: 1000;
+span.da-ge {
+	font-size: 1.7rem;
+	font-family: serif;
 }
 
-#backButton {
-    position: fixed;
-    left: 15px;
-    bottom: 15px;
-    
-    font-family: serif;
-    font-size: 18pt;
-	letter-spacing: -0.02em;
-    color: black;
-    
-    cursor: pointer;
-    z-index: 10000;
+li:hover span.date {
+	display: inline;
 }
 
-#backButtonSymbol {
-    position: absolute;
-    left: 9pt;
-    bottom: -20pt;
-    
-    font-size: 36pt;
-    visibility: hidden;
+span.works.date {
+	display: inline;
 }
 
-#backButton:hover {
-    animation-name: flicker;
-    animation-duration: 600ms;
-    animation-iteration-count: infinite;
-    
-    bottom: 9px;
-    font-family: SportingGrotesque-Regular, 'Shrikhand', sans-serif;
-    font-size: 15pt;
+
+
+.b.works-list {
+	margin-left: 2rem;
+
+	font-size: 2rem;
 }
 
-#backButton:hover #backButtonText {
-    visibility: hidden;
+
+
+
+/*IMAGES*/
+
+img {
+	width: 100%;
+	margin: 0;
 }
 
-#backButton:hover #backButtonSymbol {
-    visibility: visible;
+img.main,
+img.extra {
+	margin-bottom: 2rem;
+
+	cursor: alias;
 }
 
-@media only screen and (max-width: 600px) {
-    #header {
-        font-size: 33pt;
-        line-height: 35px;
-    }
-    #header a:hover {
-        font-size: 28pt;
-        top: 29px;
-    }
-    .navi {
-        font-size: 33pt;
-        line-height: 35px;
-    }
-    .navlink:hover {
-        font-size: 28pt;
-        line-height: 25px;
-    }
-    #nav2 {
-        font-size: 28pt;
-        line-height: 25px;
-    }
-    
-    .works {
-        width: 80%;
-        top: 160px;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    .works:hover .desc {
-        visibility: hidden;
-    }
-    
+img.main:hover,
+img.extra:hover {
+    animation: flicker-img 600ms linear 0s infinite normal;
 }
+
+img.works {
+	margin: 1rem 0rem 1rem 0rem;
+}
+
+img.no-top-margin {
+	margin: 0rem 0rem 1rem 0rem;
+}
+
+#no-bottom-margin {
+	margin-bottom: 0rem;
+}
+
+
+iframe {
+	width: 100%;
+	height: 25vw;
+	margin: 0rem 0rem 1rem 0rem;
+}
+
+
+
+/*CLASSES FOR JS*/
+
+.visible {
+	display: inline;
+}
+
+.flicker-txt {
+	font-style: italic;
+    animation: flicker-txt 600ms linear 0s infinite normal;
+}
+
+.flicker-img {
+    animation: flicker-img 600ms linear 0s infinite normal;
+}
+
+
+@media only screen and (max-width: 660px) {
+
+	.page-title, 
+	p.b.works-list, 
+	li, 
+	span.b, 
+	span.date, 
+	a.page-title,
+	.header {
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+	}
+
+	p,
+	.header {
+		margin: 0rem 0rem 1.5rem 0rem;
+	}
+
+	.b.works-list {
+		margin-left: 1.5rem;
+	}
+
+	span.da-ge {
+		font-size: 1.2rem;
+	}
+
+	.column {
+		padding: 0rem;
+	}
+
+	.column.left,
+	.column.right {
+		width: calc(100vw - 3rem);
+	}
+
+	.column.left {
+		height: calc(35vh - 2.25rem);
+		top: 0;
+		margin-bottom: 0.75rem;
+		padding: 1.5rem 1.5rem 0rem 1.5rem;
+	}
+
+	.column.right {
+		height: calc(65vh - 2.25rem);
+		top: 35vh;
+		margin-top: 0.75rem;
+		padding: 0rem 1.5rem 1.5rem 1.5rem;
+	}
+
+	img.main {
+		margin-bottom: 1.5rem;
+	}
+
+	img.works {
+		margin: 0.75rem 0rem 0.75rem 0rem;
+	}
+
+	img.no-top-margin {
+		margin: 0rem 0rem 0.75rem 0rem;
+	}
+
+	#no-bottom-margin {
+		margin-bottom: 4.5rem;
+	}
+
+	iframe {
+		margin: 0rem 0rem 0.75rem 0rem;
+	}
+}
+
+
+
+
