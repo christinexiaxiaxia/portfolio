@@ -234,13 +234,15 @@ img {
 	margin: 0;
 }
 
-img.main {
+img.main,
+img.extra {
 	margin-bottom: 2rem;
 
 	cursor: alias;
 }
 
-img.main:hover {
+img.main:hover,
+img.extra:hover {
     animation: flicker-img 600ms linear 0s infinite normal;
 }
 
