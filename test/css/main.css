@@ -289,7 +289,7 @@ iframe {
 	span.b, 
 	span.date, 
 	a.page-title,
-	p.works.header {
+	.header {
 		font-size: 1.5rem;
 		line-height: ;
 	}
