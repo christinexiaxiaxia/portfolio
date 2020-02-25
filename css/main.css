@@ -7,12 +7,7 @@ iframe {display:none !important;};
 @font-face{
 	font-family: SportingGrotesque-Regular;
 	
-    src: url("https://github.com/velvetyne/Sporting-Grotesque/blob/master/webfonts/Regular/Sporting_Grotesque-Regular_web.eot"); /* IE9 Compat Modes */
-    src: url("https://github.com/velvetyne/Sporting-Grotesque/blob/master/webfonts/Regular/Sporting_Grotesque-Regular_web.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-         url("https://github.com/velvetyne/Sporting-Grotesque/blob/master/webfonts/Regular/Sporting_Grotesque-Regular_web.woff2") format("woff2"), /* Super Modern Browsers */
-         url("https://github.com/velvetyne/Sporting-Grotesque/blob/master/webfonts/Regular/Sporting_Grotesque-Regular_web.woff") format("woff"), /* Pretty Modern Browsers */
-         url("https://github.com/velvetyne/Sporting-Grotesque/blob/master/webfonts/Regular/Sporting_Grotesque-Regular_web.ttf")  format("truetype"), /* Safari, Android, iOS */
-         url("https://github.com/velvetyne/Sporting-Grotesque/blob/master/webfonts/Regular/Sporting_Grotesque-Regular_web.svg#svgSportingGrotesque") format("svg"); /* Legacy iOS */
+    src: url("../fontsSportingGrotesque-Regular.otf");
 }
 
 @keyframes fadein {
