@@ -39,6 +39,7 @@
 
 ::-webkit-scrollbar {
     width: 0.25rem;
+    height: 0.25rem;
     background-color: white;
 }
 ::-webkit-scrollbar-thumb {
@@ -292,6 +293,15 @@ iframe {
 		font-size: 1.5rem;
 	}
 
+	p,
+	.header {
+		margin: 0rem 0rem 1.5rem 0rem;
+	}
+
+	.b.works-list {
+		margin-left: 1.5rem;
+	}
+
 	span.da-ge {
 		font-size: 1.2rem;
 	}
@@ -303,17 +313,18 @@ iframe {
 	.column.left,
 	.column.right {
 		width: calc(100vw - 3rem);
-		height: calc(50vh - 2.25rem);
 	}
 
 	.column.left {
+		height: calc(40vh - 2.25rem);
 		top: 0;
 		margin-bottom: 0.75rem;
 		padding: 1.5rem 1.5rem 0rem 1.5rem;
 	}
 
 	.column.right {
-		top: 50vh;
+		height: calc(60vh - 2.25rem);
+		top: 40vh;
 		margin-top: 0.75rem;
 		padding: 0rem 1.5rem 1.5rem 1.5rem;
 	}
@@ -327,6 +338,10 @@ iframe {
 	}
 
 	img.no-top-margin {
+		margin: 0rem 0rem 0.75rem 0rem;
+	}
+
+	iframe {
 		margin: 0rem 0rem 0.75rem 0rem;
 	}
 }
