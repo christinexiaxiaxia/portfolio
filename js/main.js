@@ -182,6 +182,22 @@ $('span.b.pp').click(function(){
 	$(this).css({'font-style':'italic'});
 })
 
+$('span.b.qq').click(function(){
+	$('.content').css({'display':'none'});
+	$('.content.qq').css({'display':'inline'});
+	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
+	$(this).css({'font-style':'italic'});
+})
+
+$('span.b.rr').click(function(){
+	$('.content').css({'display':'none'});
+	$('.content.rr').css({'display':'inline'});
+	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
+	$(this).css({'font-style':'italic'});
+})
+
 		// WORKS (CLICK IMAGE)
 
 $('img.main.aa').click(function(){
@@ -310,6 +326,24 @@ $('img.main.pp').click(function(){
 	$('li').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.pp').css({'font-style':'italic'});
+})
+
+
+$('img.main.qq').click(function(){
+	$('.content').css({'display':'none'});
+	$('.content.qq').css({'display':'inline'});
+	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
+	$('span.b.qq').css({'font-style':'italic'});
+})
+
+
+$('img.main.rr').click(function(){
+	$('.content').css({'display':'none'});
+	$('.content.rr').css({'display':'inline'});
+	$('li').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
+	$('span.b.rr').css({'font-style':'italic'});
 })
 
 
@@ -479,6 +513,26 @@ $('span.b.pp').hover(
 	}
 )
 
+$('span.b.qq').hover(
+	function(){
+		$('img.qq').addClass('flicker-img');
+		$('span.date.qq').css({'display':'inline'});
+	}, function(){
+		$('img.qq').removeClass('flicker-img');
+		$('span.date.qq').css({'display':'none'});
+	}
+)
+
+$('span.b.rr').hover(
+	function(){
+		$('img.rr').addClass('flicker-img');
+		$('span.date.rr').css({'display':'inline'});
+	}, function(){
+		$('img.rr').removeClass('flicker-img');
+		$('span.date.rr').css({'display':'none'});
+	}
+)
+
 
 
 
@@ -641,5 +695,25 @@ $('img.pp').hover(
 	}, function(){
 		$('span.b.pp').removeClass('flicker-txt');
 		$('span.date.pp').css({'display':'none'});
+	}
+)
+
+$('img.qq').hover(
+	function(){
+		$('span.b.qq').addClass('flicker-txt');
+		$('span.date.qq').css({'display':'inline'});
+	}, function(){
+		$('span.b.qq').removeClass('flicker-txt');
+		$('span.date.qq').css({'display':'none'});
+	}
+)
+
+$('img.rr').hover(
+	function(){
+		$('span.b.rr').addClass('flicker-txt');
+		$('span.date.rr').css({'display':'inline'});
+	}, function(){
+		$('span.b.rr').removeClass('flicker-txt');
+		$('span.date.rr').css({'display':'none'});
 	}
 )
