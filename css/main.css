@@ -86,40 +86,72 @@
 
 
 
+/*CURSOR*/
+
+a,
+li,
+span.a,
+span.b,
+img.main,
+img.extra {
+	
+	cursor: alias;
+}
+
+
+
+
+
 /*TYPOGRAPHY*/
 
-p {
-	margin: 0rem 0rem 2rem 0rem;
-}
-
+p,
 .header {
-	font-size: 2rem;
 	margin: 0rem 0rem 2rem 0rem;
 }
 
-p.main {
+.header,
+p.main.title, 
+p.main.date,
+.page-title,
+li,
+span.a,
+span.b,
+span.date,
+.b.works-list {
+ 	font-size: 2rem;
+}
+
+p.main,
+span.date {
 	display: none;
 }
 
-p.main.title, p.main.date {
-	font-size: 2rem;
+p.main.title, 
+p.main.date,
+ul, 
+a, 
+span.a,
+span.b,
+.page-title {
 	margin: 0;
+}
+
+li,
+.b.works-list {
+	margin-bottom: 0;
+}
+
+li.a {
+	margin-top: 0rem;
 }
 
 p.main.date {
 	margin-bottom: 2rem;
 }
 
-.page-title {
-	font-size: 2rem;
-	margin: 0;
-}
-
-.page-title:hover {
-	font-style: italic;
-}
-
-.works.date {
+.works.date,
+span.date,
+li.main {
 	font-style: italic;
 }
 
@@ -128,23 +160,26 @@ p.main.date {
 }
 
 
-
-
 a {
-	margin: 0;
-
 	color: black;
-	cursor: alias;
 }
 
-a:hover {
-	font-style: italic;
-    
-    animation: flicker-txt 600ms linear 0s infinite normal;
-}
-
-a.to-vernacular {
+a.to-vernacular,
+a.to-da-ge {
 	text-decoration: underline;
+}
+
+
+
+.page-title {
+	display: inline;
+}
+
+
+
+span.da-ge {
+	font-size: 1.7rem;
+	font-family: serif;
 }
 
 
@@ -154,76 +189,37 @@ ul {
 	list-style-type: none;
 }
 
-li {
-	font-size: 2rem;
-	margin-bottom: 1rem;
 
-	cursor: alias;
+
+
+/*HOVER STUFF*/
+
+li:hover span.date, 
+span.b:hover span.date,
+span.works.date {
+	display: inline;
 }
 
-li.a {
-	margin-top: 0rem;
-}
-
-li.main {
-	font-style: italic;
-}
-
-li:hover, li.a:hover {
-	font-style: italic;
-    
-    animation: flicker-txt 600ms linear 0s infinite normal;
-}
-
-
-
-span.b {
-	font-size: 2rem;
-	margin-bottom: 1rem;
-
-	cursor: alias;
-}
-
+a:hover, 
+li:hover, 
+li.a:hover, 
+span.a:hover,
 span.b:hover {
 	font-style: italic;
     
     animation: flicker-txt 600ms linear 0s infinite normal;
 }
 
-span.b:hover span.date {
-	display: inline;
-}
 
-
-
-span.date {
-	display: none;
-
-	font-size: 2rem;
+.page-title:hover {
 	font-style: italic;
 }
 
-span.da-ge {
-	font-size: 1.7rem;
-	font-family: serif;
+
+img.main:hover,
+img.extra:hover {
+    animation: flicker-img 600ms linear 0s infinite normal;
 }
-
-li:hover span.date {
-	display: inline;
-}
-
-span.works.date {
-	display: inline;
-}
-
-
-
-.b.works-list {
-	margin-left: 2rem;
-
-	font-size: 2rem;
-}
-
 
 
 
@@ -237,25 +233,10 @@ img {
 img.main,
 img.extra {
 	margin-bottom: 2rem;
-
-	cursor: alias;
-}
-
-img.main:hover,
-img.extra:hover {
-    animation: flicker-img 600ms linear 0s infinite normal;
 }
 
 img.works {
 	margin: 1rem 0rem 1rem 0rem;
-}
-
-img.no-top-margin {
-	margin: 0rem 0rem 1rem 0rem;
-}
-
-#no-bottom-margin {
-	margin-bottom: 0rem;
 }
 
 
@@ -263,6 +244,36 @@ iframe {
 	width: 100%;
 	height: 25vw;
 	margin: 0rem 0rem 1rem 0rem;
+}
+
+img.wink {
+	width: 1.5rem;
+	margin-bottom: -1pt;
+}
+
+
+
+
+/*MARGINS AND INDENTS*/
+
+li {
+	margin-left: 3rem;
+}
+
+.b.works-list {
+	margin-left: 7rem;
+}
+
+.poem {
+	/*margin-left: 2rem;*/
+}
+
+.no-top-margin {
+	margin: 0rem 0rem 1rem 0rem;
+}
+
+#no-bottom-margin {
+	margin-bottom: 0rem;
 }
 
 
@@ -283,6 +294,8 @@ iframe {
 }
 
 
+
+
 @media only screen and (max-width: 660px) {
 
 	.page-title, 
@@ -301,8 +314,12 @@ iframe {
 		margin: 0rem 0rem 1.5rem 0rem;
 	}
 
-	.b.works-list {
+	li {
 		margin-left: 1.5rem;
+	}
+
+	.b.works-list {
+		margin-left: 4rem;
 	}
 
 	span.da-ge {
@@ -340,6 +357,10 @@ iframe {
 		margin: 0.75rem 0rem 0.75rem 0rem;
 	}
 
+	.poem {
+		/*margin-left: 1.5rem;*/
+	}
+
 	img.no-top-margin {
 		margin: 0rem 0rem 0.75rem 0rem;
 	}
@@ -350,6 +371,10 @@ iframe {
 
 	iframe {
 		margin: 0rem 0rem 0.75rem 0rem;
+	}
+
+	img.wink {
+		width: 1.2rem;
 	}
 }
 
