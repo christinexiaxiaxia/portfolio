@@ -1,4 +1,25 @@
 
+// ENLARGE IMAGE
+
+$('.enlarge').hover(
+	function(){
+		$(this).css({
+			'position':'fixed',
+			'top':'0',
+			'height':'100vh',
+			'width':'auto'
+		})
+	}, function(){
+		$(this).css({
+			'position':'relative',
+			'height':'auto',
+			'width':'100%'
+		})
+	}
+)
+
+
+
 // CLICK TO ANOTHER PAGE
 
 $('.to-vernacular').click(function(){
