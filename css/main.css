@@ -270,12 +270,16 @@ img.wink {
 
 /*MARGINS AND INDENTS*/
 
+.page-title {
+	margin-left: 0.25rem;
+}
+
 p.a {
-	margin-left: -2.25rem;
+	margin-left: -2rem;
 }
 
 .b.works-list {
-	margin-left: 2rem;
+	margin-left: 2.25rem;
 }
 
 .poem {
