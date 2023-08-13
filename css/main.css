@@ -168,11 +168,19 @@ a {
 	color: black;
 }
 
+a.instagram {
+	color: #ccc;
+}
+
 a.to-vernacular,
 a.to-da-ge,
 a.to-seminars,
 a.to-rave {
 	text-decoration: underline;
+}
+
+.small-copy {
+	font-size: 1.5rem;
 }
 
 
@@ -241,7 +249,7 @@ img.extra {
 }
 
 img.works {
-	margin: 1rem 0rem 1rem 0rem;
+	margin: 0.75rem 0rem 0.75rem 0rem;
 }
 
 
@@ -294,7 +302,7 @@ dl {
 	list-style-type: none;
 	margin-top: 0;
 	margin-left: 2rem;
-	margin-bottom: 0;
+	margin-bottom: -1.5rem;
 }
 
 p.b {
