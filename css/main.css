@@ -245,11 +245,11 @@ img {
 
 img.main,
 img.extra {
-	margin-bottom: 1.5rem;
+	margin-bottom: 1rem;
 }
 
 img.works {
-	margin: 0.75rem 0rem 0.75rem 0rem;
+	margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
 
@@ -286,11 +286,11 @@ p.a {
 }
 
 .margin-top {
-	margin-top: 0.75rem;
+	margin-top: 0.5rem;
 }
 
 .no-top-margin {
-	margin: 0rem 0rem 1rem 0rem;
+	margin: 0rem 0rem 0.5rem 0rem;
 }
 
 #no-bottom-margin {
