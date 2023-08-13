@@ -126,7 +126,7 @@ $('span.b.cc').click(function(){
 	$('.column.right').scrollTop(0);
 })
 
-$('dd.b.dd').click(function(){
+$('span.b.dd').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.dd').css({'display':'inline'});
 	$('p.a').css({'font-style':'normal'})
@@ -189,7 +189,7 @@ $('dd.b.jj').click(function(){
 	$('.column.right').scrollTop(0);
 })
 
-$('span.b.kk').click(function(){
+$('dd.b.kk').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.kk').css({'display':'inline'});
 	$('p.a').css({'font-style':'normal'})
@@ -331,7 +331,7 @@ $('img.main.dd').click(function(){
 	$('.content.dd').css({'display':'inline'});
 	$('p.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
-	$('dd.b.dd').css({'font-style':'italic'});
+	$('span.b.dd').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
 })
 
@@ -394,7 +394,7 @@ $('img.main.kk').click(function(){
 	$('.content.kk').css({'display':'inline'});
 	$('p.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
-	$('span.b.kk').css({'font-style':'italic'});
+	$('dd.b.kk').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
 })
 
@@ -540,7 +540,7 @@ $('span.b.cc').hover(
 	}
 )
 
-$('dd.b.dd').hover(
+$('span.b.dd').hover(
 	function(){
 		$('img.dd').addClass('flicker-img');
 		$('span.date.dd').css({'display':'inline'});
@@ -624,7 +624,7 @@ $('dd.b.jj').hover(
 	}
 )
 
-$('span.b.kk').hover(
+$('dd.b.kk').hover(
 	function(){
 		$('img.kk').addClass('flicker-img');
 		$('span.date.kk').css({'display':'inline'});
@@ -805,10 +805,10 @@ $('img.cc').hover(
 
 $('img.dd').hover(
 	function(){
-		$('dd.b.dd').addClass('flicker-txt');
+		$('span.b.dd').addClass('flicker-txt');
 		$('span.date.dd').css({'display':'inline'});
 	}, function(){
-		$('dd.b.dd').removeClass('flicker-txt');
+		$('span.b.dd').removeClass('flicker-txt');
 		$('span.date.dd').css({'display':'none'});
 	}
 )
@@ -875,10 +875,10 @@ $('img.jj').hover(
 
 $('img.kk').hover(
 	function(){
-		$('span.b.kk').addClass('flicker-txt');
+		$('dd.b.kk').addClass('flicker-txt');
 		$('span.date.kk').css({'display':'inline'});
 	}, function(){
-		$('span.b.kk').removeClass('flicker-txt');
+		$('dd.b.kk').removeClass('flicker-txt');
 		$('span.date.kk').css({'display':'none'});
 	}
 )
