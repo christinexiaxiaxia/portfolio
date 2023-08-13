@@ -27,7 +27,7 @@ $('.to-vernacular').click(function(){
 	$('.content.ee').css({'display':'inline'});
 	$('p.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
-	$('span.b.ee').css({'font-style':'italic'});
+	$('dd.b.ee').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
 })
 
@@ -126,7 +126,7 @@ $('span.b.cc').click(function(){
 	$('.column.right').scrollTop(0);
 })
 
-$('span.b.dd').click(function(){
+$('dd.b.dd').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.dd').css({'display':'inline'});
 	$('p.a').css({'font-style':'normal'})
@@ -135,7 +135,7 @@ $('span.b.dd').click(function(){
 	$('.column.right').scrollTop(0);
 })
 
-$('span.b.ee').click(function(){
+$('dd.b.ee').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ee').css({'display':'inline'});
 	$('p.a').css({'font-style':'normal'})
@@ -180,7 +180,7 @@ $('span.b.ii').click(function(){
 	$('.column.right').scrollTop(0);
 })
 
-$('span.b.jj').click(function(){
+$('dd.b.jj').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.jj').css({'display':'inline'});
 	$('p.a').css({'font-style':'normal'})
@@ -331,7 +331,7 @@ $('img.main.dd').click(function(){
 	$('.content.dd').css({'display':'inline'});
 	$('p.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
-	$('span.b.dd').css({'font-style':'italic'});
+	$('dd.b.dd').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
 })
 
@@ -340,7 +340,7 @@ $('img.main.ee').click(function(){
 	$('.content.ee').css({'display':'inline'});
 	$('p.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
-	$('span.b.ee').css({'font-style':'italic'});
+	$('dd.b.ee').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
 })
 
@@ -385,7 +385,7 @@ $('img.main.jj').click(function(){
 	$('.content.jj').css({'display':'inline'});
 	$('p.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
-	$('span.b.jj').css({'font-style':'italic'});
+	$('dd.b.jj').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
 })
 
@@ -540,7 +540,7 @@ $('span.b.cc').hover(
 	}
 )
 
-$('span.b.dd').hover(
+$('dd.b.dd').hover(
 	function(){
 		$('img.dd').addClass('flicker-img');
 		$('span.date.dd').css({'display':'inline'});
@@ -552,7 +552,7 @@ $('span.b.dd').hover(
 	}
 )
 
-$('span.b.ee').hover(
+$('dd.b.ee').hover(
 	function(){
 		$('img.ee').addClass('flicker-img');
 		$('span.date.ee').css({'display':'inline'});
@@ -612,7 +612,7 @@ $('span.b.ii').hover(
 	}
 )
 
-$('span.b.jj').hover(
+$('dd.b.jj').hover(
 	function(){
 		$('img.jj').addClass('flicker-img');
 		$('span.date.jj').css({'display':'inline'});
@@ -805,20 +805,20 @@ $('img.cc').hover(
 
 $('img.dd').hover(
 	function(){
-		$('span.b.dd').addClass('flicker-txt');
+		$('dd.b.dd').addClass('flicker-txt');
 		$('span.date.dd').css({'display':'inline'});
 	}, function(){
-		$('span.b.dd').removeClass('flicker-txt');
+		$('dd.b.dd').removeClass('flicker-txt');
 		$('span.date.dd').css({'display':'none'});
 	}
 )
 
 $('img.ee').hover(
 	function(){
-		$('span.b.ee').addClass('flicker-txt');
+		$('dd.b.ee').addClass('flicker-txt');
 		$('span.date.ee').css({'display':'inline'});
 	}, function(){
-		$('span.b.ee').removeClass('flicker-txt');
+		$('dd.b.ee').removeClass('flicker-txt');
 		$('span.date.ee').css({'display':'none'});
 	}
 )
@@ -865,10 +865,10 @@ $('img.ii').hover(
 
 $('img.jj').hover(
 	function(){
-		$('span.b.jj').addClass('flicker-txt');
+		$('dd.b.jj').addClass('flicker-txt');
 		$('span.date.jj').css({'display':'inline'});
 	}, function(){
-		$('span.b.jj').removeClass('flicker-txt');
+		$('dd.b.jj').removeClass('flicker-txt');
 		$('span.date.jj').css({'display':'none'});
 	}
 )
