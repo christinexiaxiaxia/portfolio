@@ -20,12 +20,44 @@
 
 
 
+// NOT SO SECRET HOVER
+
+$(document).mousemove(function(e){
+	$('.secret-hover-content').css({'top': e.clientY + 12, 'left': e.clientX + 12})
+})
+
+$('.secret-hover.the-web').hover(
+	function(){
+		$('.secret-hover-content.the-web').css({
+			'display':'inline'
+		})
+	}, function(){
+		$('.secret-hover-content.the-web').css({
+			'display':'none'
+		})
+	}
+)
+
+$('.secret-hover.book-binding').hover(
+	function(){
+		$('.secret-hover-content.book-binding').css({
+			'display':'inline'
+		})
+	}, function(){
+		$('.secret-hover-content.book-binding').css({
+			'display':'none'
+		})
+	}
+)
+
+
+
 // CLICK TO ANOTHER PAGE
 
 $('.to-vernacular').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ee').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.ee').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -34,7 +66,7 @@ $('.to-vernacular').click(function(){
 $('.to-da-ge').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.cc').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.cc').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -43,7 +75,7 @@ $('.to-da-ge').click(function(){
 $('.to-seminars').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.tt').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.tt').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -52,7 +84,7 @@ $('.to-seminars').click(function(){
 $('.to-rave').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ff').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.ff').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -61,37 +93,37 @@ $('.to-rave').click(function(){
 
 // CLICK TO VIEW SECTION
 
-$('p.a.about').click(function(){
+$('span.a.about').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.about').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
 })
 
-$('p.a.contact').click(function(){
+$('span.a.contact').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.contact').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
 })
 
-$('p.a.main-works').click(function(){
+$('span.a.main-works').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.main').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
 })
 
-$('p.a.extra').click(function(){
+$('span.a.extra').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.extra').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -102,7 +134,7 @@ $('p.a.extra').click(function(){
 $('span.b.aa').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.aa').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -111,7 +143,7 @@ $('span.b.aa').click(function(){
 $('span.b.bb').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.bb').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -120,7 +152,7 @@ $('span.b.bb').click(function(){
 $('span.b.cc').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.cc').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -129,7 +161,7 @@ $('span.b.cc').click(function(){
 $('span.b.dd').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.dd').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -138,7 +170,7 @@ $('span.b.dd').click(function(){
 $('span.b.ee').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ee').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -147,7 +179,7 @@ $('span.b.ee').click(function(){
 $('span.b.ff').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ff').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -156,7 +188,7 @@ $('span.b.ff').click(function(){
 $('span.b.gg').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.gg').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -165,7 +197,7 @@ $('span.b.gg').click(function(){
 $('span.b.hh').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.hh').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -174,7 +206,7 @@ $('span.b.hh').click(function(){
 $('span.b.ii').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ii').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -183,7 +215,7 @@ $('span.b.ii').click(function(){
 $('span.b.jj').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.jj').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -192,7 +224,7 @@ $('span.b.jj').click(function(){
 $('span.b.kk').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.kk').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -201,7 +233,7 @@ $('span.b.kk').click(function(){
 $('span.b.ll').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ll').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -210,7 +242,7 @@ $('span.b.ll').click(function(){
 $('span.b.mm').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.mm').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -219,7 +251,7 @@ $('span.b.mm').click(function(){
 $('span.b.nn').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.nn').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -228,7 +260,7 @@ $('span.b.nn').click(function(){
 $('span.b.oo').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.oo').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -237,7 +269,7 @@ $('span.b.oo').click(function(){
 $('span.b.pp').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.pp').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -246,7 +278,7 @@ $('span.b.pp').click(function(){
 $('span.b.qq').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.qq').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -255,7 +287,7 @@ $('span.b.qq').click(function(){
 $('span.b.rr').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.rr').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -264,7 +296,7 @@ $('span.b.rr').click(function(){
 $('span.b.ss').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ss').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -273,7 +305,7 @@ $('span.b.ss').click(function(){
 $('span.b.tt').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.tt').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -282,7 +314,7 @@ $('span.b.tt').click(function(){
 $('span.b.uu').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.uu').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -291,7 +323,7 @@ $('span.b.uu').click(function(){
 $('span.b.vv').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.vv').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -302,7 +334,7 @@ $('span.b.vv').click(function(){
 $('img.main.aa').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.aa').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.aa').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -311,7 +343,7 @@ $('img.main.aa').click(function(){
 $('img.main.bb').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.bb').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.bb').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -320,7 +352,7 @@ $('img.main.bb').click(function(){
 $('img.main.cc').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.cc').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.cc').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -329,7 +361,7 @@ $('img.main.cc').click(function(){
 $('img.main.dd').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.dd').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.dd').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -338,7 +370,7 @@ $('img.main.dd').click(function(){
 $('img.main.ee').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ee').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.ee').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -347,7 +379,7 @@ $('img.main.ee').click(function(){
 $('img.main.ff').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ff').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.ff').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -356,7 +388,7 @@ $('img.main.ff').click(function(){
 $('img.main.gg').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.gg').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.gg').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -365,7 +397,7 @@ $('img.main.gg').click(function(){
 $('img.main.hh').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.hh').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.hh').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -374,7 +406,7 @@ $('img.main.hh').click(function(){
 $('img.main.ii').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ii').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.ii').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -383,7 +415,7 @@ $('img.main.ii').click(function(){
 $('img.main.jj').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.jj').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.jj').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -392,7 +424,7 @@ $('img.main.jj').click(function(){
 $('img.main.kk').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.kk').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.kk').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -401,7 +433,7 @@ $('img.main.kk').click(function(){
 $('img.main.ll').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ll').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.ll').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -410,7 +442,7 @@ $('img.main.ll').click(function(){
 $('img.main.mm').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.mm').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.mm').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -419,7 +451,7 @@ $('img.main.mm').click(function(){
 $('img.main.nn').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.nn').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.nn').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -428,7 +460,7 @@ $('img.main.nn').click(function(){
 $('img.main.oo').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.oo').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.oo').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -437,7 +469,7 @@ $('img.main.oo').click(function(){
 $('img.main.pp').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.pp').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.pp').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -446,7 +478,7 @@ $('img.main.pp').click(function(){
 $('img.main.qq').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.qq').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.qq').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -455,7 +487,7 @@ $('img.main.qq').click(function(){
 $('img.main.rr').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.rr').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.rr').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -464,7 +496,7 @@ $('img.main.rr').click(function(){
 $('img.main.ss').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.ss').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.ss').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -473,7 +505,7 @@ $('img.main.ss').click(function(){
 $('img.main.tt').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.tt').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.tt').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -482,7 +514,7 @@ $('img.main.tt').click(function(){
 $('img.main.uu').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.uu').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.uu').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
@@ -491,7 +523,7 @@ $('img.main.uu').click(function(){
 $('img.main.vv').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.vv').css({'display':'inline'});
-	$('p.a').css({'font-style':'normal'})
+	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$('span.b.vv').css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
