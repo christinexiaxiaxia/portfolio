@@ -307,6 +307,11 @@ p.a {
 	margin-bottom: 0rem;
 }
 
+.header.par-indent {
+	text-indent: -4rem;
+	margin-left: 4rem;
+}
+
 
 dl {
 	list-style-type: none;
