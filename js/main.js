@@ -129,6 +129,15 @@ $('span.a.extra').click(function(){
 	$('.column.right').scrollTop(0);
 })
 
+$('span.a.design').click(function(){
+	$('.content').css({'display':'none'});
+	$('.content.design').css({'display':'inline'});
+	$('span.a').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
+	$(this).css({'font-style':'italic'});
+	$('.column.right').scrollTop(0);
+})
+
 		// WORKS (CLICK TEXT)
 
 $('span.b.aa').click(function(){
