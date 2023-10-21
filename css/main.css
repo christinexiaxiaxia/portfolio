@@ -130,6 +130,13 @@ dd {
  	line-height: 1.9rem;
 }
 
+span.a,
+a.header,
+a.small-copy {
+	text-decoration: underline 0.8px;
+	text-underline-offset: 2pt;
+}
+
 .works.header {
 	font-style: italic;
 }
@@ -193,7 +200,8 @@ a.to-vernacular,
 a.to-da-ge,
 a.to-seminars,
 a.to-rave {
-	text-decoration: underline;
+	text-decoration: underline 0.8px;
+	text-underline-offset: 2pt;
 }
 
 .small-copy {
