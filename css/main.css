@@ -229,8 +229,8 @@ p.defunkt-type.italic {
 }
 
 p.defunkt-type.large {
-	font-size: 10vw;
-	line-height: 8.66vw;
+	font-size: calc(11.5vw - 1.5rem);
+	line-height: calc(10vw - 1.5rem);
 	letter-spacing: -0.1vw;
 	padding: 5rem 4rem 7rem 4rem;
 }
@@ -483,10 +483,22 @@ dt {
 	}*/
 
 	p.defunkt-type.large {
-		font-size: 16vw;
-		line-height: 13.9vw;
+		font-size: calc(17vw - 1.5rem);
+		line-height: calc(15vw - 1.5rem);
 		letter-spacing: -0.3vw;
 		padding: 5rem 4rem 7rem 4rem;
+	}
+
+	p.defunkt-type.large.top {
+		padding: 8rem 4rem 4rem 4rem;
+	}
+
+	p.defunkt-type.large.bottom {
+		padding: 4rem 4rem 6rem 4rem;
+	}
+
+	p.defunkt-type.top-margin {
+		margin-top: 0.8rem;
 	}
 
 	span.da-ge {
