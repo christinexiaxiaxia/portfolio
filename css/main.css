@@ -134,7 +134,8 @@ dd {
 	font-style: italic;
 }
 
-p.italic {
+p.italic,
+span.italic {
 	font-style: italic;
 }
 
