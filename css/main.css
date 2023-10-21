@@ -134,6 +134,10 @@ dd {
 	font-style: italic;
 }
 
+p.italic {
+	font-style: italic;
+}
+
 p.main,
 span.date {
 	display: none;
