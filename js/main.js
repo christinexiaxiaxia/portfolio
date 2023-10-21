@@ -1,7 +1,7 @@
 
 // ENLARGE IMAGE
 
-// $('.enlarge').hover(
+// $('img.enlarge').hover(
 // 	function(){
 // 		$(this).css({
 // 			'position':'fixed',
@@ -9,12 +9,14 @@
 // 			'height':'100vh',
 // 			'width':'auto'
 // 		})
+// 		console.log('hi')
 // 	}, function(){
 // 		$(this).css({
 // 			'position':'relative',
 // 			'height':'auto',
 // 			'width':'100%'
 // 		})
+// 		console.log('bye')
 // 	}
 // )
 
