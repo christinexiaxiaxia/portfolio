@@ -231,7 +231,7 @@ p.defunkt-type {
 	text-align: center;
 }
 
-p.defunkt-type.italic {
+p.defunkt-type.defunkt-italic {
 	font-family: defunkt-italic;
 	letter-spacing: -0.1vw;
 }
