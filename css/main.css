@@ -89,7 +89,7 @@
 
 a,
 p.a,
-span.a,
+/*span.a,*/
 span.b,
 img.main,
 img.extra {
@@ -130,7 +130,7 @@ dd {
  	line-height: 1.9rem;
 }
 
-span.a,
+/*span.a,*/
 a.header,
 a.small-copy {
 	text-decoration: underline 0.8px;
@@ -176,8 +176,8 @@ p.main.date {
 
 .works.date,
 span.date,
-p.design,
-span.design,
+/*p.design,*/
+/*span.design,*/
 .afterword {
 	font-style: italic;
 }
@@ -286,7 +286,7 @@ span.works.date {
 
 a:hover, 
 p.a:hover, 
-span.a:hover,
+/*span.a:hover,*/
 span.b:hover {
 	font-style: italic;
     
