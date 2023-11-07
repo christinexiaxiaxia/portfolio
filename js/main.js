@@ -95,50 +95,55 @@ $('.to-rave').click(function(){
 
 // CLICK TO VIEW SECTION
 
-$('span.a.about').click(function(){
+// $('span.a.about').click(function(){
+// 	$('.content').css({'display':'none'});
+// 	$('.content.about').css({'display':'inline'});
+// 	$('span.a').css({'font-style':'normal'})
+// 	$('span.b').css({'font-style':'normal'})
+// 	$(this).css({'font-style':'italic'});
+// 	$('.column.right').scrollTop(0);
+// })
+
+// $('span.a.contact').click(function(){
+// 	$('.content').css({'display':'none'});
+// 	$('.content.contact').css({'display':'inline'});
+// 	$('span.a').css({'font-style':'normal'})
+// 	$('span.b').css({'font-style':'normal'})
+// 	$(this).css({'font-style':'italic'});
+// 	$('.column.right').scrollTop(0);
+// })
+
+$('span.a.main-works').click(function(){
 	$('.content').css({'display':'none'});
-	$('.content.about').css({'display':'inline'});
+	$('.content.main').css({'display':'inline'});
 	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
+	$('.column.right').scrollTop($('#main-summary').offset().top - 10);
 })
 
-$('span.a.contact').click(function(){
+$('span.a.extra').click(function(){
 	$('.content').css({'display':'none'});
-	$('.content.contact').css({'display':'inline'});
+	$('.content.main').css({'display':'inline'});
+	// $('.content.extra').css({'display':'inline'});
 	$('span.a').css({'font-style':'normal'})
 	$('span.b').css({'font-style':'normal'})
 	$(this).css({'font-style':'italic'});
 	$('.column.right').scrollTop(0);
+	$('.column.right').scrollTop($('#extra-summary').offset().top - 10);
 })
 
-// $('span.a.main-works').click(function(){
-// 	$('.content').css({'display':'none'});
-// 	$('.content.main').css({'display':'inline'});
-// 	$('span.a').css({'font-style':'normal'})
-// 	$('span.b').css({'font-style':'normal'})
-// 	$(this).css({'font-style':'italic'});
-// 	$('.column.right').scrollTop(0);
-// })
-
-// $('span.a.extra').click(function(){
-// 	$('.content').css({'display':'none'});
-// 	$('.content.extra').css({'display':'inline'});
-// 	$('span.a').css({'font-style':'normal'})
-// 	$('span.b').css({'font-style':'normal'})
-// 	$(this).css({'font-style':'italic'});
-// 	$('.column.right').scrollTop(0);
-// })
-
-// $('span.a.design').click(function(){
-// 	$('.content').css({'display':'none'});
-// 	$('.content.design').css({'display':'inline'});
-// 	$('span.a').css({'font-style':'normal'})
-// 	$('span.b').css({'font-style':'normal'})
-// 	$(this).css({'font-style':'italic'});
-// 	$('.column.right').scrollTop(0);
-// })
+$('span.a.design').click(function(){
+	$('.content').css({'display':'none'});
+	$('.content.main').css({'display':'inline'});
+	// $('.content.design').css({'display':'inline'});
+	$('span.a').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
+	$(this).css({'font-style':'italic'});
+	$('.column.right').scrollTop(0);
+	$('.column.right').scrollTop($('#design-summary').offset().top - 10);
+})
 
 		// WORKS (CLICK TEXT)
 
