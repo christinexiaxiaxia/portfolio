@@ -54,6 +54,18 @@ $('.secret-hover.book-binding').hover(
 
 
 
+// LEFT COLUMN ITALIC CHANGE DEPENDING ON SCROLL POSITION
+
+var scrollPosition = $(window).scrollTop();
+var extraPosition = $('#extra-summary').scrollTop();
+
+if (scrollPosition > extraPosition) {
+	// $('.column.right').css({'background-color':'red'});
+	console.log('hi')
+}
+
+
+
 // CLICK TO ANOTHER PAGE
 
 $('.to-vernacular').click(function(){

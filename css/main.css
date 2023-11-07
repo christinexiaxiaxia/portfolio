@@ -176,8 +176,8 @@ p.main.date {
 
 .works.date,
 span.date,
-/*p.design,*/
-/*span.design,*/
+p.design,
+span.design,
 .afterword {
 	font-style: italic;
 }
