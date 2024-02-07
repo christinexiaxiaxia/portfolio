@@ -56,13 +56,13 @@ $('.secret-hover.book-binding').hover(
 
 // LEFT COLUMN ITALIC CHANGE DEPENDING ON SCROLL POSITION
 
-var scrollPosition = $(window).scrollTop();
-var extraPosition = $('#extra-summary').scrollTop();
+// var scrollPosition = $(window).scrollTop();
+// var extraPosition = $('#extra-summary').scrollTop();
 
-if (scrollPosition > extraPosition) {
-	// $('.column.right').css({'background-color':'red'});
-	console.log('hi')
-}
+// if (scrollPosition > extraPosition) {
+// 	// $('.column.right').css({'background-color':'red'});
+// 	console.log('hi')
+// }
 
 
 
@@ -837,6 +837,7 @@ $('img.aa').hover(
 	function(){
 		$('span.b.aa').addClass('flicker-txt');
 		$('span.date.aa').css({'display':'inline'});
+		// $('span.a.main').css({''})
 	}, function(){
 		$('span.b.aa').removeClass('flicker-txt');
 		$('span.date.aa').css({'display':'none'});
