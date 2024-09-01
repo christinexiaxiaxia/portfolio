@@ -168,6 +168,10 @@ $('span.b.aa').click(function(){
 	$('.column.right').scrollTop(0);
 })
 
+// $('span.b.aa').click(function(){
+//   alert("The paragraph was clicked.");
+// });
+
 $('span.b.bb').click(function(){
 	$('.content').css({'display':'none'});
 	$('.content.bb').css({'display':'inline'});
