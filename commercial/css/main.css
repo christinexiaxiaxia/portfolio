@@ -28,7 +28,7 @@
 
 	display: grid;
 	grid-template-rows: auto;
-	grid-row-gap: 3rem;
+	grid-row-gap: 2rem;
 }
 
 .item.work {
@@ -39,6 +39,7 @@
 	width: 100%;
 }
 
+<<<<<<< HEAD:commercial/css/main.css
 .description {
 	display: grid;
 	grid-template-rows: auto auto;
@@ -51,6 +52,8 @@ p {
 	margin: 0;
 }
 
+=======
+>>>>>>> parent of b5b0366 (update):pages/commercial/css/main.css
 .content {
 	display: grid;
 	grid-template-rows: auto;
