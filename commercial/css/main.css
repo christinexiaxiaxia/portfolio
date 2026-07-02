@@ -41,9 +41,10 @@
 
 .description {
 	display: grid;
-	grid-template-rows: auto;
+	grid-template-rows: auto auto;
 	grid-row-gap: 0.5rem;
-	height: 20rem;
+
+	height: fit-content;
 }
 
 p {
@@ -70,7 +71,6 @@ img {
 
 video {
 	width: 100%;
-	height: auto;
 
 	background-color: #ccc;
 }
@@ -139,6 +139,7 @@ a:hover {
 		margin-left: 0;
 		margin-top: 6rem;
 		padding-top: 0;
+		padding-bottom: 0;
 	}
 
 	.item.work {
@@ -146,6 +147,10 @@ a:hover {
 		grid-template-rows: auto auto;
 		grid-column-gap: 0rem;
 		grid-row-gap: 1rem;
+	}
+
+	.description {
+		grid-row-gap: 0rem;
 	}
 
 	.hide-mobile {
