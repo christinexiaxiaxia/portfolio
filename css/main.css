@@ -151,6 +151,7 @@ a.small-copy {
 span.strike {
  	font-size: 2rem;
 	text-decoration: underline 1.5px;
+	-webkit-text-decoration: underline 1.5px;
 	text-underline-offset: -0.28em;
 	text-decoration-skip-ink: none;
 }
