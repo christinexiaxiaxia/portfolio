@@ -157,6 +157,17 @@ $('span.a.design').click(function(){
 	$('.column.right').scrollTop($('#design-summary').offset().top - 10);
 })
 
+$('span.a.active').click(function(){
+	$('.content').css({'display':'none'});
+	$('.content.main').css({'display':'inline'});
+	// $('.content.design').css({'display':'inline'});
+	$('span.a').css({'font-style':'normal'})
+	$('span.b').css({'font-style':'normal'})
+	$(this).css({'font-style':'italic'});
+	$('.column.right').scrollTop(0);
+	$('.column.right').scrollTop($('#active-summary').offset().top - 10);
+})
+
 		// WORKS (CLICK TEXT)
 
 $('span.b.aa').click(function(){
