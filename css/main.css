@@ -130,8 +130,8 @@ dd {
  	line-height: 1.9rem;
 }
 
-.design-desc,
-a.design-desc {
+.superscript,
+a.superscript {
 	font-size: 1rem;
 	vertical-align: 0.4rem;
 }
@@ -510,8 +510,8 @@ dt {
 		line-height: 1.9rem;
 	}
 
-	.design-desc,
-	a.design-desc {
+	.superscript,
+	a.superscript {
 		font-size: 1rem;
 	}
 
