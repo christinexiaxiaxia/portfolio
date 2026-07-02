@@ -91,6 +91,11 @@ p {
 .small {
 	font-family: sans-serif;
 	font-size: 1rem;
+	font-style: normal;
+}
+
+.small.inline {
+	line-height: 0rem;
 }
 
 .italic {
