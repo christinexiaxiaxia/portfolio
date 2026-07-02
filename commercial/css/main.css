@@ -41,8 +41,13 @@
 
 .description {
 	display: grid;
-	grid-template-rows: auto-fill, 100px;
+	grid-template-rows: auto;
 	grid-row-gap: 0.5rem;
+	height: 20rem;
+}
+
+p {
+	margin: 0;
 }
 
 .content {
@@ -85,9 +90,6 @@ video {
 
 
 
-p {
-	margin: 0;
-}
 
 .big {
 	font-family: serif;
@@ -146,7 +148,7 @@ a:hover {
 		grid-row-gap: 1rem;
 	}
 
-	.hide {
+	.hide-mobile {
 		display: none;
 	}
 
