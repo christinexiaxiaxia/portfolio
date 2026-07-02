@@ -23,7 +23,7 @@
 
 	display: grid;
 	grid-template-rows: auto;
-	grid-row-gap: 2rem;
+	grid-row-gap: 3rem;
 }
 
 .item.work {
@@ -33,6 +33,11 @@
 
 	width: 100%;
 }
+
+/*.description {
+	position: sticky;
+	top: 0;
+}*/
 
 .content {
 	display: grid;
