@@ -143,6 +143,13 @@ a.small-copy {
 	text-underline-offset: 2pt;
 }
 
+span.strike {
+ 	font-size: 2rem;
+	text-decoration: underline 1.5px;
+	text-underline-offset: -0.28em;
+	text-decoration-skip-ink: none;
+}
+
 .works.header {
 	font-style: italic;
 }
@@ -215,8 +222,6 @@ a.to-rave {
 	font-size: 1.5rem;
 }
 
-
-
 .page-title {
 	display: inline;
 }
@@ -274,7 +279,6 @@ span.defunkt-type {
 	width: calc(100% - 8rem);
 	margin: 4rem;
 }
-
 
 .works-list-part-two {
 /*	margin-top: -1.5rem;*/
