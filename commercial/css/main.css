@@ -163,6 +163,13 @@ a:hover {
 		grid-row-gap: 1rem;
 	}
 
+	.stack-mobile {
+		grid-template-columns: auto;
+		grid-template-rows: 1fr 1fr;
+		grid-column-gap: 0rem;
+		grid-row-gap: 1rem;
+	}
+
 	.description {
 		grid-row-gap: 0rem;
 	}
