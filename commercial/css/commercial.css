@@ -109,7 +109,7 @@ video {
 
 .mute-button {
 	position: absolute;
-	bottom: 1rem;
+	bottom: calc(1rem + 2px);
 	right: 1rem;
 
 	padding: 0.5rem;
