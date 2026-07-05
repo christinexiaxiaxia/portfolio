@@ -84,15 +84,12 @@ img {
 	background-color: #222;
 }
 
-video {
-	padding: 0;
-	margin: 0;
-}
-
 .video-container {
 	position: relative;
 	width: 100%;
 	height: fit-content;
+
+	margin-bottom: -2px;
 }
 
 .socialvid {
