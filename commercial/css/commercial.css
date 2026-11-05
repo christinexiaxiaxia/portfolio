@@ -85,6 +85,8 @@ img {
 }
 
 .video-container {
+	display: flex;
+	justify-content: center;
 	position: relative;
 	width: 100%;
 	height: fit-content;
@@ -105,6 +107,11 @@ video {
 	width: 100%;
 
 	background-color: #222;
+}
+
+video.smallvid {
+	width: 50%;
+	margin: 4rem 0;
 }
 
 .mute-button {
